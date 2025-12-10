@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
-  const inputRef = useRef("");
+  const inputRef = useRef(null);
 
   const addTodos = () => {
     const newTodo = {
@@ -33,6 +33,7 @@ const TodoList = () => {
     });
 
     setTodos(updatedTodos);
+
     const toggledTodo = updatedTodos.find((todo) => todo.id === id);
 
     if (toggledTodo.isCompleted) {

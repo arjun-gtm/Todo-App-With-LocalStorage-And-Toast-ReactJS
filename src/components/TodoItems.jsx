@@ -1,4 +1,4 @@
-import { Circle, Trash2, Plus, CircleCheckBig } from "lucide-react";
+import { Circle, Trash2, CircleCheckBig } from "lucide-react";
 
 const TodoItems = ({todos, checkComplete, deleteTodo}) => {
   return (
